@@ -1,0 +1,192 @@
+/* CSS FOR ALL PROPERTIES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the documents body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-left: 1vh;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 120%;
+    background-color: #D3E3FC;
+    border-width: 20px;
+    border-color: #D3E3FC;
+    border: 60px solid #77A6F7;
+}
+
+/* Provides margin for all <h1> properties*/
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+/* Centers all flex content*/
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* CSS FOR WEATHER CONTENT*/
+/* Applied to the panel containing the weather information*/
+.forecast {
+    background: #ffffff;
+    color: rgb(48, 34, 11);
+    font-size: 25px;
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 620px;
+    height: 450px;
+    margin: 1em;
+    float: left;
+    overflow: hidden;
+}
+
+/* Capitalisation of written content */
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+
+}
+
+/* CSS colour styling to temperature text */
+.temp {
+    color: #00887A;
+}
+
+/* Applies styling to user inputted search */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+/* CSS styling for the search bar */
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #D3E3FC;
+    color: #00887A;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+/* CSS styling for the button aside the search bar */
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    background: #00887A;
+    color: #fffdfd;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Changes colour property of button when mouse is hovered over */
+button:hover {
+    background: #f54040f7;
+}
+
+/* Hides weather content when loading */
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+/* Enables visibility of content from loading class */
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 1;
+    left: 20px;
+}
+
+
+/* CSS FOR HEADER*/
+/* Sets size parameters for header and centers content within */
+#header {
+    width: 100%;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Poditioning of the <div> in Header and content within */
+#headerDiv {
+    position: fixed;
+    text-align: center;
+    top: 7%;
+    padding: 1em;
+    width: 40%;
+}
+
+/* CSS applied to the title of the application */
+#titleDiv {
+    width: auto;
+    margin: auto;
+    background: #77A6F7;
+    ;
+    border-radius: 30px;
+    width: 100%;
+    margin-left: 2em
+}
+
+/* ALters colour and sizing of title text */
+#titleText {
+    color: #ffffff;
+    font-size: 300%;
+}
+
+
+/* CSS FOR IMAGES */
+/* Creates padding for the images */
+#img {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+/* positions content to the left */
+#left {
+    float: left;
+    vertical-align: middle;
+}
+
+/* positions content to the right */
+#right {
+    float: right;
+}
+
+
+/* CSS properties to the image produced from search */
+.weatherImage {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 650px;
+    margin: 1em;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
